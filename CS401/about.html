@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jonathan Tipton</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav-container stars-background">
+      
+    </nav>
+  </header>
+
+  <div class= "display-block">
+    <h1>
+      <span id="who-me" class="white-text monospace display-block">About Me
+        <p class="black-text">
+            Insert Bio Here
+        </p>
+      </span>
+      <span id="who-me" class="display-block">Passions</span>
+      <span id="who-me" class="display-block">Reality?</span>
+    </h1>
+  </div>
+
+  <!--SLIDESHOW -->
+<div class="slideshow-container display-block">
+  <div class="mySlides">
+    <img src="Media/teton.jpg">
+  </div>
+  <div class="mySlides">
+    <img src="Media/gopher.jpg">
+  </div>
+  <div class="mySlides">
+    <img src="Media/eclipse.jpeg">
+  </div>
+</div>
+<div class="display-block">
+<p class="ipsum-test display-block padding-bottom-10px">
+
+</p>
+</div>
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+  </script>
+  <footer>
+    <span class="align-center monospace">Copyright Jonathan Tipton</span>
+    <span class="align-left margin-left-30px monospace">CS 401</span>
+    <span class="align-right margin-right-30px monospace">2020</span>
+  </footer>
+</body>
+</html>
