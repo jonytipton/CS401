@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(57, 68, 92, 0.75),rgba(7, 26, 68, 0.9));
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+#active a {
+  text-decoration: underline;
+  color: black;
+  background-color: white;
+  border-radius: 50px;  
+
+}
+
+header {
+  height: 125px;
+  background-position: top;
+}
+
+.navbar {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a{
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: monospace;
+  font-size: 20px;
+}
+.navbar li a:hover {
+  background: #fff;
+  color: #333;
+  border-radius: 50px;  
+}
+
+.width-100 {
+  width: 100%;
+}
+.black-text {
+  color: black;
+}
+.underline {
+  text-decoration: underline;
+}
+.display-block {
+  display: block;
+}
+.font-fantasy {
+  font-family: impact;
+}
+.font-courier {
+  font-family: courier;
+}
+.font-cursive {
+  font-family: cursive;
+}
+.font-copperplate {
+  font-family: copperplate;
+}
+.nav-container {
+  width: 100%;
+}
+.margin-bottom-50px {
+  margin-bottom: 50px;
+}
+.email-style {
+  text-decoration: none;
+}
+.monospace {
+ font-family: monospace;
+}
+.logo img{
+  width: 100px;
+  float: left;
+  height: auto;
+  opacity: .8;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+.strong {
+  text-decoration: strong;
+}
+.font-size-50px {
+  font-size: 50px;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+  float: right;
+}
+.align-left {
+  text-align: left;
+  float: left;
+}
+.padding-bottom-10px {
+  padding-bottom: 100px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(200,200,200,.2),rgba(200,200,200,0));
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+.display-inline-block {
+  display: inline-block;
+}
+.margin-left-30px {
+  margin-left: 30px;
+}
+.margin-right-30px {
+  margin-right: 30px;
+}
+.italicized {
+  font-style:  italic;
+}
+
+.white-text {
+  color: white;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0px -5px;
+  padding-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    overflow: scrollable;
+  }
+
+}
+.display-inline-block {
+  vertical-align: middle;
+}
+
+.about-image {
+  width: 25%;
+  min-width: 300px;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-right: 10%; 
+  border-radius: 5%;
+  float: right;
+}
+.about-text {
+  text-align: left;
+  float: left;
+  margin-left: 50px;
+  font-family: monospace;
+  font-size: 2.25em;
+}
+.about-text p {
+  margin-top: 5px;
+  margin-bottom:25px;
+  color: white;
+  padding-left: 50px;
+}
+.about-text h1 {
+  margin-top:20px;
+}
+.about-text h2 {
+  margin-top: 50px;
+  text-decoration: underline;
+}
+.about-text h3 {
+  font-weight: strong;
+  color: white;
+}
+
+.gallery-text {
+  text-align: left;
+  float: left;
+  margin-left: 50px;
+  font-family: monospace;
+  font-size: 2.25em;
+}
+
+.gallery-text h1 {
+  margin-top:20px;
+  display:block;
+}
+
+.content {
+  overflow: scroll;
+  margin-top: 58px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 80%;
+  position: absolute;
+  display: inline-block;
+  overflow: scrollable;
+}
+#float-left {
+  float: left;
+}
+#float-right {
+  float: right;
+}
+.list-header {
+  margin-top: 25px;
+  margin-bottom: -25px;
+  margin-left: 20px;
+  color: #fff;
+  background-color: inherit;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.margin-top-250px {
+  margin-top: 250;
+}
+
+.form-container {
+  font-family: monospace;
+  text-align: center;
+  
+  font-size: larger;
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-size: larger;
+  display: inline-block;
+}
+
+canvas {
+  border:5px solid #d3d3d3;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 50%, 50%;
+  width: 100%;
+  bottom: 50;
+  position: absolute;
+  height: 65%;
+}
+
+button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #999999;
+}
+
+button:active {
+  background-color: gold;
+}
+
+/*JQUERY ABOUT ME FADE IN*/
+#t0, #t1,#t2, #t3, #t4, #t5, #t6, #t7, #t8, .about-image {
+  visibility: hidden;
+}
+
+.fa {
+  margin-top: 25px;
+  padding: 25px;
+  margin-right: 10px;
+  font-size: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-google {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background:white;
+  color: black;
+  margin-left: 50px;
+
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+.mySlides {
+  display:none;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+

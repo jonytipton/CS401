@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom, rgba(57, 68, 92, 0.75),rgba(7, 26, 68, 0.9));
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #active a {
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+    border-radius: 50px;  
+  
+  }
+  
+  header {
+    height: 125px;
+    background-position: top;
+  }
+  
+  .navbar {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .navbar li {
+    display: inline-block;
+  }
+  .navbar li a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  .navbar li a:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 50px;  
+  }
+  
+  .width-100 {
+    width: 100%;
+  }
+  .black-text {
+    color: black;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .display-block {
+    display: block;
+  }
+  .font-fantasy {
+    font-family: impact;
+  }
+  .font-courier {
+    font-family: courier;
+  }
+  .font-cursive {
+    font-family: cursive;
+  }
+  .font-copperplate {
+    font-family: copperplate;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  .margin-bottom-50px {
+    margin-bottom: 50px;
+  }
+  .email-style {
+    text-decoration: none;
+  }
+  .monospace {
+   font-family: monospace;
+  }
+  .logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+    opacity: .8;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  .strong {
+    text-decoration: strong;
+  }
+  .font-size-50px {
+    font-size: 50px;
+  }
+  .align-center {
+    text-align: center;
+  }
+  .align-right {
+    text-align: right;
+    float: right;
+  }
+  .align-left {
+    text-align: left;
+    float: left;
+  }
+  .padding-bottom-10px {
+    padding-bottom: 100px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(200,200,200,.2),rgba(200,200,200,0));
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  .display-inline-block {
+    display: inline-block;
+  }
+  .margin-left-30px {
+    margin-left: 30px;
+  }
+  .margin-right-30px {
+    margin-right: 30px;
+  }
+  .italicized {
+    font-style:  italic;
+  }
+  
+  .white-text {
+    color: white;
+  }
+  .display-inline-block {
+    vertical-align: middle;
+  }
+  
+
+  .gallery-text {
+    text-align: left;
+    float: left;
+    margin-left: 50px;
+    font-family: monospace;
+    font-size: 2.25em;
+  }
+  
+  .gallery-text h1 {
+    margin-top:20px;
+    display:block;
+  }
+  
+
+
+  
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  .row {
+      margin-top: 100px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  .column img {
+      width: 100%;
+  }
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  #expandedImg {
+      width: 100%;
+  }
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
