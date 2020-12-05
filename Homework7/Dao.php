@@ -107,6 +107,25 @@ class Dao {
         }
         return true;
     }
+
+    public function validatePassword($password) {
+        if (!preg_match("/^(?=.*?[0-9])(?=.*?[^a-zA-Z0-9 ]).{8,}$/",$password)) {
+            return false;
+        }
+        return true;
+    }
+
+    public function getPhone($email) {
+        $conn = $this->getConnection();
+        $phoneQuery = "SELECT phoneNumber from users WHERE emailAdress = :email";
+        $q = $conn->prepare($phoneQuery);
+        $q->bindParam(':email', $email);
+        $q->execute();
+        $result = $q->fetch(PDO::FETCH_ASSOC);
+        if ($result) {
+            return $result;
+        }
+    }
 }
 
 $dao = new Dao();

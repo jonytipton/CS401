@@ -37,53 +37,93 @@ if (isset($_SESSION['authenticated']) && !$_SESSION['authenticated'] || !isset($
       
     </form>
     </div>
-
-    <span>Cart-Graphic</span>
   </div>
-
-
   <div class="content">
+    <div class="row">
+
+      <div class="column">
+        <div class="card">
+          <h1>T.A. Moulton Barn</h1>
+          <a href="Media/barn.jpg" download>
+              <img src="Media/barn.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h1>Bears in Grand Teton</h1>
+          <a href="Media/bears.jpg" download>
+              <img src="Media/bears.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h1>"Trip" in the Mountains"</h1>
+          <a href="Media/trip.jpg" download>
+              <img src="Media/trip.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+    </div>
+
+
     <div class="row">
       <div class="column">
         <div class="card">
-          <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-          <h1>Tailored Jeans</h1>
-          <p class="price">$19.99</p>
-          <p>Some text about the jeans..</p>
-          <p><button>Add to Cart</button></p>
+          <h1>Rainbow Galaxy</h1>
+          <a href="Media/milkyway.jpg" download>
+              <img src="Media/milkyway.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h1>Shoshone Cliffside</h1>
+          <a href="Media/shoshone.jpg" download>
+              <img src="Media/shoshone.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h1>T.A. Moulton Barn (Comets)</h1>
+          <a href="Media/barnStars.jpg" download>
+              <img src="Media/barnStars.jpg">
+          <a>
+            <h4>Click image for free download</h4>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h1>"Boise Timelapse"</h1>
+          <a href="Media/citylapse.mp4" download>
+              <img src="Media/citylapse.mp4">
+          <a>
+            <h4>Click image for free download</h4>
         </div>
       </div>
       <div class="column">
         <div class="card">
-          <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-          <h1>Tailored Jeans</h1>
-          <p class="price">$19.99</p>
-          <p>Some text about the jeans..</p>
-          <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-          <h1>Tailored Jeans</h1>
-          <p class="price">$19.99</p>
-          <p>Some text about the jeans..</p>
-          <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-          <h1>Tailored Jeans</h1>
-          <p class="price">$19.99</p>
-          <p>Some text about the jeans..</p>
-          <p><button>Add to Cart</button></p>
+          <h1>Grand Teton Landscape</h1>
+          <a href="Media/horses.jpeg" download>
+              <img src="Media/horses.jpeg">
+          <a>
+            <h4>Click image for free download</h4>
         </div>
       </div>
     </div>
   </div>
-  </div>
-  <div>
 </body>
 <footer>
   <?php include("phpincludes/footer.php"); ?>

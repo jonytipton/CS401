@@ -150,14 +150,14 @@ footer {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   padding: 0 10px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
   margin: 0px -5px;
-  padding-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Clear floats after the columns */
@@ -172,7 +172,15 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: transparent;
+  font-family: monospace;
+  border-radius: 50px;
+  color: white;
+}
+
+.card img {
+  border-radius: 50px;
+  width: 100%;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */

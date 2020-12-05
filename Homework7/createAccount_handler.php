@@ -14,6 +14,9 @@ $dao = new Dao();
     if (!$dao->validatePhone($_POST['phone'])) {
         returnError("INCORECT FORMAT: Invalid phone number. US format: ##########");
     }
+    if (!$dao->validatePassword($_POST['password'])) {
+        returnError("INCORECT FORMAT: Weak password. Must have a capital letter, number and 8 or more characters.");
+    }
 
 
 if($dao->insertUser($_POST['lName'], $_POST['fName'], $_POST['email'], $_POST['password'], $_POST['phone'])) {
